@@ -22,7 +22,7 @@ namespace Programa12
             if (double.TryParse(textBox1.Text, out double celsius))
             {
                 double fahrenheit = (celsius * 9 / 5) + 32;
-                textBox1.Text = fahrenheit.ToString();
+                label1.Text = fahrenheit.ToString();
             }
             else
             {

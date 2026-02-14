@@ -19,12 +19,12 @@ namespace Programa13
 
         private void button1_Click(object sender, EventArgs e)
         {
-            timer1.Start();
+            Progreso.Start();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            timer1.Stop();     
+            Progreso.Stop();     
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -32,7 +32,7 @@ namespace Programa13
             if (progressBar1.Value < 100)
                 progressBar1.Value++;
             else
-                timer1.Stop();
+                Progreso.Stop();
         }
     }
 }
